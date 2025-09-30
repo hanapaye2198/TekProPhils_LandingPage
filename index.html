@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TekProPhils</title>
+    <link rel="icon" href="image/favicon_io/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg position-relative">
+  <a class="navbar-brand" href="#">
+    <img src="image/TekProPhils.png" alt="TekMonks Logo">
+    <span class="text-white font-weight-bold">TekProPhils</span>
+  </a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown position-static">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="productsDropdown">
+          <div class="menu-wrapper">
+            <div class="column left">
+              <div class="submenu-item active" onclick="switchTab('productsMenu', 0)">Artificial Intelligence</div>
+              <div class="submenu-item" onclick="switchTab('productsMenu', 1)">Cybersecurity</div>
+              <div class="submenu-item" onclick="switchTab('productsMenu', 2)">Enterprise Application Integration and API</div>
+              <div class="submenu-item" onclick="switchTab('productsMenu', 3)">Monitoring and Response</div>
+              <div class="submenu-item" onclick="switchTab('productsMenu', 4)">Cloud</div>
+            </div>
+            <div class="column right">
+              <div class="tab-content" id="productsMenu">
+                <div class="row tab-pane active">
+                  <div class="col-md-3"><h6><strong>AI Analytics</strong></h6><p>Real-time automated data analysis with focused acuity.</p></div>
+                  <div class="col-md-3"><h6><strong>AIPA</strong></h6><p>Complete Robotic Automation Platform for Enterprises.</p></div>
+                  <div class="col-md-3"><h6><strong>Monkruls</strong></h6><p>Powerful lightweight business rules engine.</p></div>
+                  <div class="col-md-3"><h6><strong>Neuranet</strong></h6><p>Enterprise AI Neural Networks intelligent, integrated, and easy to use.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-3"><h6><strong>LoginCat 360</strong></h6><p>World's first comprehensive Cyber Security suite &AI that is Zero Trust based.</p></div>
+                  <div class="col-md-3"><h6><strong>Reflection Network</strong></h6><p>"Listenless servers" accessible via the network are attack-proof by reflections.</p></div>
+                  <div class="col-md-3"><h6><strong>Cyberwarrior</strong></h6><p>An AI expert security system for cyber defense designed to combat smart attacks.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-3"><h6><strong>ASB - API Service Bus</strong></h6><p>First & only Integration Bus for API based applications.</p></div>
+                  <div class="col-md-3"><h6><strong>API Boss</strong></h6><p>The world's most powerful and complete API Manager.</p></div>
+                  <div class="col-md-3"><h6><strong>DBMagic</strong></h6><p>A REST Layer for DataBase</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-3"><h6><strong>MonitorX</strong></h6><p>Complete end-to-end monitoring of hybrid systems and performance metrics.</p></div>
+                  <div class="col-md-3"><h6><strong>AlertEngine</strong></h6><p>Real-time alerting and incident management with adaptive thresholds.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-3"><h6><strong>SkyScale</strong></h6><p>Enterprise-grade scalable cloud deployment and management tools.</p></div>
+                  <div class="col-md-3"><h6><strong>CloudX</strong></h6><p>Cloud-native orchestration layer integrated with Tekmonks services.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown position-static">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="solutionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Solutions
+        </a>
+        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="solutionsDropdown">
+          <div class="menu-wrapper">
+            <div class="column left">
+              <div class="submenu-item active" onclick="switchTab('solutionsMenu', 0)">Finance</div>
+              <div class="submenu-item" onclick="switchTab('solutionsMenu', 1)">Retail</div>
+              <div class="submenu-item" onclick="switchTab('solutionsMenu', 2)">Healthcare</div>
+            </div>
+            <div class="column right">
+              <div class="tab-content" id="solutionsMenu">
+                <div class="row tab-pane active">
+                  <div class="col-md-4"><h6><strong>Banking Solutions</strong></h6><p>Secure and efficient banking solutions powered by AI.</p></div>
+                  <div class="col-md-4"><h6><strong>Investment Platforms</strong></h6><p>Robust platforms for investment management.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-4"><h6><strong>E-Commerce</strong></h6><p>Integrated solutions for online retail businesses.</p></div>
+                  <div class="col-md-4"><h6><strong>Inventory Management</strong></h6><p>Smart inventory tracking and management systems.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-4"><h6><strong>Patient Management</strong></h6><p>Comprehensive patient record systems.</p></div>
+                  <div class="col-md-4"><h6><strong>Telemedicine</strong></h6><p>Remote healthcare solutions for modern needs.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown position-static">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tekmonks Social
+        </a>
+        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="socialDropdown">
+          <div class="menu-wrapper">
+            <div class="column left">
+              <div class="submenu-item active" onclick="switchTab('socialMenu', 0)">Blog</div>
+              <div class="submenu-item" onclick="switchTab('socialMenu', 1)">Events</div>
+              <div class="submenu-item" onclick="switchTab('socialMenu', 2)">News</div>
+            </div>
+            <div class="column right">
+              <div class="tab-content" id="socialMenu">
+                <div class="row tab-pane active">
+                  <div class="col-md-6"><h6><strong>Latest Posts</strong></h6><p>Read our most recent articles and insights.</p></div>
+                  <div class="col-md-6"><h6><strong>Tech Trends</strong></h6><p>Stay updated with the latest in technology.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-6"><h6><strong>Upcoming Events</strong></h6><p>Join us at our next conference or webinar.</p></div>
+                  <div class="col-md-6"><h6><strong>Past Events</strong></h6><p>Materials and recordings from previous events.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-6"><h6><strong>Press Releases</strong></h6><p>Official announcements and company news.</p></div>
+                  <div class="col-md-6"><h6><strong>Media Coverage</strong></h6><p>Where Tekmonks has been featured.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown position-static">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="companyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Company
+        </a>
+        <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="companyDropdown">
+          <div class="menu-wrapper">
+            <div class="column left">
+              <div class="submenu-item active" onclick="switchTab('companyMenu', 0)">About Us</div>
+              <div class="submenu-item" onclick="switchTab('companyMenu', 1)">Leadership</div>
+              <div class="submenu-item" onclick="switchTab('companyMenu', 2)">Careers</div>
+            </div>
+            <div class="column right">
+              <div class="tab-content" id="companyMenu">
+                <div class="row tab-pane active">
+                  <div class="col-md-6"><h6><strong>Our Story</strong></h6><p>Learn about Tekmonks' history and mission.</p></div>
+                  <div class="col-md-6"><h6><strong>Our Values</strong></h6><p>The principles that guide our work.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-6"><h6><strong>Executive Team</strong></h6><p>Meet our leadership team.</p></div>
+                  <div class="col-md-6"><h6><strong>Advisors</strong></h6><p>Our network of industry experts.</p></div>
+                </div>
+                <div class="row tab-pane">
+                  <div class="col-md-6"><h6><strong>Open Positions</strong></h6><p>Join our growing team.</p></div>
+                  <div class="col-md-6"><h6><strong>Culture</strong></h6><p>What it's like to work at Tekmonks.</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000" style="margin-top: -90px; position: relative; z-index: 0;">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="position: relative; height: 100vh; background: url('image/1.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">NEURANET<br>TEKNOPROPHILS</h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/2.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">AI EXPERT SYSTEM FOR<br>CYBERSECURITY</h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/3.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">STATE OF THE ART ROBOTIC <br>AUTOMATION</h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/4.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">TOMORROW'S HYBRID CLOUD<br>TODAY</h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/5.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">
+              <span style="color: #1E88E5;">Tele</span><span style="color: #43A047;">Workr</span><br>
+              <span style="color: white; font-weight: normal;">The Borderless Office</span> <!-- changed to white to match -->
+            </h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/6.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">ENTERPRISE CONTENT <span>PLATFORM</span></h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/7.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">ENTERPRISE CONTENT <span>PLATFORM</span></h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item" style="position: relative; height: 100vh; background: url('image/8.png') no-repeat right center; background-size: cover;">
+      <div class="container h-100 d-flex flex-column justify-content-center">
+        <div class="row align-items-center h-100">
+          <div class="col-md-6 text-white">
+            <h1 class="display-4 font-weight-bold">ENTERPRISE CONTENT <span>PLATFORM</span></h1>
+            <a href="#" class="btn btn-danger btn-lg mt-4">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="left: -80px; z-index: 5;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="right: -80px; z-index: 5;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<section class="products-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/9.png" alt="TELEWORKR" class="mr-3" width="90">
+          <div>
+            <a href="#" class="no-underline">
+            <h5 class="font-weight-bold">TELEWORKR</h5>
+            </a>
+            <p>All-in-one digital office for the booming trend of remote work around the world.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/10.png" alt="REFLECTION NETWORK" class="mr-3" width="90">
+          <div>
+            <a href="#" class="no-underline">
+            <h5 class="font-weight-bold">REFLECTION NETWORK</h5>
+            </a>
+            <p>“Listenless servers” accessible via the network are attack-proof by reflections.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/14.png" alt="LOGINCAT" class="mr-3" width="110">
+          <div>
+            <a href="#" class="no-underline">
+            <h5 class="font-weight-bold">LOGINCAT</h5>
+            </a>
+            <p>World’s first comprehensive Zero Trust based Cyber Security suite & AI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/15.png" alt="ASB - API SERVICE BUS" class="mr-3" width="100">
+          <div>
+            <a href="#" class="no-underline">
+            <h5 class="font-weight-bold">ASB - API SERVICE BUS</h5>
+            </a>
+            <p>First, and only Integration Bus for modern API based applications & economy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/16.png" alt="API400" class="mr-3" width="100">
+          <div>
+              <a href="#" class="no-underline">
+            <h5 class="font-weight-bold">API400</h5>
+            </a>
+            <p>Fountain of youth for legacy systems particularly for those running on AS/400.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="d-flex align-items-start">
+          <img src="image/11.png " alt="MONBOSS" class="mr-3" width="90">
+          <div>
+            <a href="#" class="no-underline">
+          <h5 class="font-weight-bold">MONBOSS</h5>
+        </a>
+            <p>Monitor & fix AI-Ops issues with the Boss of the next revolution for enterprises.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="about-section">
+    <h2>A BIT ABOUT US</h2>
+    <p>
+      Founded to address the disparity of software access between small businesses and conglomerates,
+      Tekmonks' vision has been to provide superior software to any size organization. Our focus and dedication
+      (and love of AI) has since been poured into developing software in every category from enterprise
+      integration, robotic process automation, AIOPs, unparalleled cybersecurity & even a plug and play chatbot.
+      This unwavering passion for development has led to the creation of the amazing products of tomorrow, <i>today</i>.
+    </p>
+  </section>
+
+
+  <section class="our-verticals">
+  <div class="container">
+    <h2 class="text-center text-danger font-weight-bold mb-5">OUR VERTICALS</h2>
+    <div class="row">
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/line-chart.gif" alt="Finance" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Finance</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/shopping-cart.gif" alt="Retail" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Retail</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/airplane.gif" alt="Aerospace" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Aerospace</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/worldwide.gif" alt="Telecom" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Telecom</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/settings.gif" alt="Technology" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Technology</h3>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 col-6 mb-4">
+        <a href="#" class="vertical-link">
+          <div class="vertical-card">
+            <img src="image/gif/heartbeat.gif" alt="Health" width="80" class="mb-3">
+            <h3 class="text-dark mb-0">Health</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Join Our Team</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Discover</h3>
+        <ul>
+          <li><a href="#">Enterprise Software</a></li>
+          <li><a href="#">Enterprise Solutions</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow us here</h3>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <img src="image/TekProPhils.png" alt="TekProPhils">
+      <p>Copyright 2025, Tekmonks. All Rights Reserved<br>
+      Developed using WebScrolls</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Function to handle tab switching
+function switchTab(menuId, index) {
+  const menu = document.getElementById(menuId);
+  const items = menu.parentElement.querySelectorAll('.submenu-item');
+  const panes = menu.querySelectorAll('.tab-pane');
+
+  // Remove active class from all items and panes
+  items.forEach(item => item.classList.remove('active'));
+  panes.forEach(pane => pane.classList.remove('active'));
+  
+  // Add active class to selected item and pane
+  items[index].classList.add('active');
+  panes[index].classList.add('active');
+}
+
+// Keep dropdown open when clicking inside
+document.querySelectorAll('.dropdown-menu-custom').forEach(menu => {
+  menu.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+});
+
+// Initialize first tab as active on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.column.left .submenu-item').forEach((item, index) => {
+    if (index === 0) item.classList.add('active');
+  });
+  document.querySelectorAll('.tab-content .tab-pane').forEach((pane, index) => {
+    if (index === 0) pane.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
